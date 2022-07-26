@@ -1,18 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>main-page</title>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220722121758">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap&_v=20220726190127"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220726190127">
 </head>
+
 <body>
-	<header class="header"></header>
-	<main>
-	</main>
-	<footer>
-	<script src="js/app.min.js?_v=20220722121758"></script>
-</footer>
+    <header class="header">
+    <nav class="header-nav">
+        <a href="/" class="logo">
+
+            <svg class="logo__svg">
+                <use href="img/sprite.svg#logo"></use>
+            </svg>
+            <span class="logo__text">Interno</span>
+        </a>
+        <ul class="header-nav__items">
+            <li class="header-nav__item"><a href="/" class="header-nav__link">Home</a></li>
+            <li class="header-nav__item"><a href="/" class="header-nav__link">About Us</a></li>
+            <li class="header-nav__item"><a href="/" class="header-nav__link">Services</a></li>
+            <li class="header-nav__item"><a href="/" class="header-nav__link">Pages</a></li>
+            <li class="header-nav__item"><a href="/" class="header-nav__link">Contact Us</a></li>
+        </ul>
+        <button class="nav-toggler" aria-label="navigation toggler">
+            <svg class="nav-toggler__icon">
+                <use href="img/sprite.svg#burger-nav"></use>
+            </svg>
+        </button>
+    </nav>
+</header>
+    <main>
+        <section class="titlelist">
+    <picture><source srcset="img/banner.webp" type="image/webp"><img class="titlelist__hero-img" src="img/banner.jpg" alt="banner"></picture>
+    <div class="titlelist__container">
+        <h1 class="titlelist__title">Let's Create Your<br> Dream Interior</h1>
+        <p class="titlelist__text">The world needs innovators and problem solvers who turn<br>
+            challenges into greater opportunities.</p>
+        <button class="titlelist__button">
+            <span class="button__text">Get Started</span>
+            <svg class="button__img">
+                <use href="img/sprite.svg#arrow"></use>
+            </svg>
+        </button>
+    </div>
+</section>
+        <section class="feature">
+    <ul class="feature__items">
+        <li class="feature__item">
+            <h2 class="feature__title">Interior Design</h2>
+            <p class="feature__text">Enhancing the interior to achieve a healthier environment for the people
+                using right space.</p>
+            <a href="/" class="feature__link">
+                <span class="feature__link--text">View More</span>
+                <svg class="feature__link--svg">
+                    <use href="img/sprite.svg#arrow"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="feature__item">
+            <h2 class="feature__title">Furniture</h2>
+            <p class="feature__text">Movable articles that are used to make a room or building suitable for
+                living or working.</p>
+            <a href="/" class="feature__link">
+                <span class="feature__link--text">View More</span>
+                <svg class="feature__link--svg">
+                    <use href="img/sprite.svg#arrow"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="feature__item">
+            <h2 class="feature__title">Flooring</h2>
+            <p class="feature__text">Thin object any finished material applied over a floor structure to provide
+                a walking surface.</p>
+            <a href="/" class="feature__link">
+                <span class="feature__link--text">View More</span>
+                <svg class="feature__link--svg">
+                    <use href="img/sprite.svg#arrow"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</section>
+        <section class="free-estimate">
+    <div class="free-estimate__container">
+        <div class="free-estimate__box">
+            <h2 class="free-estimate__title">We Tackle The Most Challenging Designs</h2>
+            <p class="free-estimate__text">The world needs innovators and problem solvers who turn challenges into
+                greater opportunities. We have<br>an insatiable curiosity about transformative trends challenging the
+                status.</p>
+            <div class="free-estimate__call">
+                <div class="call__background">
+                    <svg class="call__svg">
+                        <use href="img/sprite.svg#phone"></use>
+                    </svg>
+                </div>
+                <div class="call__contacts">
+                    <span class="call__number">012345678</span>
+                    <span class="call__text">Call Us Anytime</span>
+                </div>
+            </div>
+            <button class="free-estimate__button">
+                <span class="button__text">Get Free Estimate</span>
+
+                <svg class="button__img">
+                    <use href="img/sprite.svg#arrow"></use>
+                </svg>
+            </button>
+        </div>
+        <picture><source srcset="img/free-estimate_2x.webp" type="image/webp"><img class="free-estimate__img" src="img/free-estimate_2x.jpg" alt="Free-estimate"></picture>
+    </div>
+</section>
+        <section class="interno">
+    <div class="interno-container">
+        <h2 class="interno__title">What the People Thinks<br>About Interno</h2>
+        <ul class="interno__items">
+            <li class="interno__item">
+                <div class="interno-item__box">
+                    <picture><source srcset="img/interno.webp" type="image/webp"><img src="img/interno.png" alt="photo" class="interno__png"></picture>
+                    <div class="interno-item__box--data">
+                        <h3 class="interno-item__name">Lisa Clairton</h3>
+                        <p class="interno-item__origin">New York, USA</p>
+                    </div>
+                </div>
+                <p class="interno__text">We selected Interno interior because of rigorous design background &
+                    education.</p>
+            </li>
+            <li class="interno__item">
+                <div class="interno-item__box">
+                    <picture><source srcset="img/interno2.webp" type="image/webp"><img src="img/interno2.png" alt="photo" class="interno__png"></picture>
+                    <div class="interno-item__box--data">
+                        <h3 class="interno-item__name">David Knight</h3>
+                        <p class="interno-item__origin">Sydney, Australia</p>
+                    </div>
+                </div>
+                <p class="interno__text">The team exceeded our expectations and emerged as leaders of our
+                    project’s.</p>
+            </li>
+            <li class="interno__item">
+                <div class="interno-item__box">
+                    <picture><source srcset="img/interno3.webp" type="image/webp"><img src="img/interno3.png" alt="photo" class="interno__png"></picture>
+                    <div class="interno-item__box--data">
+                        <h3 class="interno-item__name">Lisa Clairton</h3>
+                        <p class="interno-item__origin">Paris, France</p>
+                    </div>
+                </div>
+                <p class="interno__text">They balanced the architectural vision and the project realities
+                    beautifully.</p>
+            </li>
+</section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer></footer>
+
 </body>
+
 </html>

@@ -1,3 +1,15 @@
-@import './vendors/normalize';
-
-@import './base/module';
+@import "./vendors/normalize";
+// VERIABLES
+@import "./base/vars.scss";
+// BASE
+@import "./base/base";
+// HEADER
+@import "./components/header.scss";
+// TITLELIST
+@import "./layout/titlelist.scss";
+// FEATURE
+@import "./layout/feature.scss";
+// Free-estimate
+@import "./components/Free-estimate.scss";
+// INTERNO
+@import "./layout/interno.scss";
