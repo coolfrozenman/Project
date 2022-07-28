@@ -51,8 +51,9 @@
   gap: 20px;
 }
 .interno__png {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   border-radius: 50%;
 }
 .interno-item__name {

@@ -1,0 +1,59 @@
+.brands {
+  padding: 0 15px;
+  margin-bottom: 112px;
+}
+.brands__items {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.brands__item {
+  list-style-type: none;
+}
+
+.brands__modern-home {
+  width: 132px;
+  height: 43px;
+}
+.brands__vintage {
+  width: 103px;
+  height: 103px;
+}
+.brands__brand {
+  width: 164px;
+  height: 43px;
+}
+.brands__nature-home {
+  width: 145px;
+  height: 45px;
+}
+.brands__classic {
+  width: 117px;
+  height: 48px;
+}
+
+.brands__modern-home,
+.brands__vintage,
+.brands__brand,
+.brands__nature-home,
+.brands__classic {
+  color: var(--title-color);
+  transition: 0.3s all;
+}
+
+.brands__modern-home:hover,
+.brands__vintage:hover,
+.brands__brand:hover,
+.brands__nature-home:hover,
+.brands__classic:hover,
+.brands__modern-home:focus,
+.brands__vintage:focus,
+.brands__brand:focus,
+.brands__nature-home:focus,
+.brands__classic:focus {
+  color: var(--hover-color);
+}

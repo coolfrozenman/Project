@@ -44,6 +44,7 @@
   width: 93px;
   height: 93px;
   border-radius: 50%;
+  transition: 0.3s all;
   cursor: pointer;
 
   &:hover,
@@ -55,6 +56,7 @@
   width: 32px;
   height: 32px;
   color: var(--hover-color);
+  transition: 0.3s all;
 }
 .call__background:hover .call__svg {
   color: var(--white-color);
