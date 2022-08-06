@@ -1,0 +1,129 @@
+.footer {
+  padding: 0 15px;
+}
+.footer__items {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 110px auto;
+  padding: 0;
+}
+.foot__logo {
+  margin-bottom: 15px;
+}
+.footer__pages,
+.footer__explore {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 364px;
+  padding: 0;
+}
+.footer__item {
+  list-style-type: none;
+}
+.footer__social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.footer__facebook {
+  width: 10px;
+  height: 19px;
+}
+.footer__twitter {
+  width: 18px;
+  height: 15px;
+}
+.footer__in {
+  width: 16px;
+  height: 17px;
+}
+.footer__insta {
+  width: 17px;
+  height: 18px;
+}
+.footer__svg {
+  color: var(--title-color);
+  transform: scale(1);
+  transition: transform 300ms linear, 300ms all;
+  &:hover {
+    color: var(--hover-color);
+    transform: scale(1.5);
+  }
+}
+.footer__item--title,
+.footer__contact--title {
+  line-height: 1.5em;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.footer__item--link,
+.footer__item--text,
+.footer-adress,
+.contact__link,
+.footer-number {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+}
+.contact__link {
+  text-decoration: none;
+  display: block;
+  &:hover {
+    color: var(--hover-color);
+  }
+}
+.footer__item--link:hover {
+  color: var(--hover-color);
+}
+.footer__item--link {
+  text-decoration: none;
+}
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  border-top: solid 1px #e5e5e5;
+  padding: 35px 0;
+  gap: 10px;
+}
+.copyright {
+  color: var(--hover-color);
+}
+@media screen and (max-width: 767px) {
+  .footer__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+  .foot__logo {
+    justify-content: center;
+  }
+  .footer__social {
+    justify-content: center;
+  }
+  .footer__contact--title,
+  .footer-adress,
+  .contact__link,
+  .footer-number,
+  .footer__item--text,
+  .footer__item--title {
+    text-align: center;
+  }
+  .footer__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__items {
+    flex-wrap: wrap;
+  }
+}

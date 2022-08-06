@@ -22,19 +22,7 @@
   width: 34px;
   margin-right: 10px;
 }
-.nav-toggler__icon {
-  width: 32px;
-  height: 32px;
-  margin: auto;
-}
-.nav-toggler__icon:hover {
-  fill: var(--hover-color);
-}
-@media screen and (min-width: 768px) {
-  .nav-toggler {
-    display: none;
-  }
-}
+
 // fixed-header
 .header {
   background-color: #fff;
@@ -57,14 +45,29 @@
 }
 .header-nav__link {
   text-decoration: none;
-  font-family: var(--font-text);
-  font-style: normal;
   font-size: 19px;
   line-height: 1.5em;
-  color: var(--tittle-color);
 
   &:hover,
   &:focus {
     color: var(--hover-color);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-nav__items {
+    display: none;
+  }
+  .nav-toggler__icon {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+  }
+  .nav-toggler__icon:hover {
+    fill: var(--hover-color);
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav-toggler__icon {
+    display: none;
   }
 }

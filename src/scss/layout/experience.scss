@@ -1,0 +1,42 @@
+// EXPIRIENCE
+.experience {
+  background-color: #f4f0ec;
+  margin-bottom: 130px;
+}
+.experience__items {
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  padding: 156px 0 140px 0;
+}
+.experience__item {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+.experience__item:not(:last-child) {
+  border-right: 2px var(--hover-color) solid;
+  padding-right: 72px;
+}
+
+.experience__title {
+  color: var(--hover-color);
+  line-height: 1.5em;
+  font-size: 85px;
+  text-align: center;
+  margin: 0;
+}
+.experience__text {
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .experience {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .experience__title {
+    font-size: 45px;
+  }
+}

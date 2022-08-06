@@ -12,20 +12,11 @@
   gap: 80px;
 }
 .free-estimate__title {
-  font-family: var(--font-title);
-  color: var(--title-color);
-  font-style: normal;
   font-size: 50px;
-  font-weight: 400;
   line-height: 1.3em;
 }
 .free-estimate__text {
-  font-family: var(--font-text);
-  color: var(--text-color);
-  font-style: normal;
   font-size: 22px;
-  font-weight: 400;
-  line-height: 1.5em;
   margin: 0 0 46px 0;
 }
 .free-estimate__box {
@@ -70,11 +61,6 @@
 .call__number,
 .call__text {
   display: block;
-  font-family: var(--font-text);
-  color: var(--text-color);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5em;
 }
 .call__number {
   font-size: 24px;
@@ -109,9 +95,28 @@
   height: 36px;
 }
 .button__text {
-  font-family: var(--font-text);
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .free-estimate {
+    margin-bottom: 50px;
+  }
+  .free-estimate__container {
+    gap: 0;
+    justify-content: center;
+  }
+  .free-estimate__img {
+    display: none;
+  }
+  .free-estimate__title {
+    text-align: center;
+    margin-top: 0;
+    font-size: 40px;
+  }
+  .free-estimate__text {
+    text-align: center;
+  }
+  .free-estimate__call {
+    text-align: center;
+  }
 }
